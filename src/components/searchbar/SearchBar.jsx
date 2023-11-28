@@ -29,9 +29,9 @@ export default function SearchBar(props) {
             onChange={handleChange}
             value={id}
          />
-         <button onClick={handleClick}>Agregar</button>
+         <button onClick={handleClick}>Agregar➕</button>
          {/* Traer Character Random */}
-         <button onClick={handleRandom}>Random</button>
+         <button onClick={handleRandom}>Random🎲</button>
       </div>
    );
 }
