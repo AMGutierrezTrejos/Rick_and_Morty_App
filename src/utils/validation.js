@@ -22,5 +22,5 @@ export default function validation(input) {
 
 // console.log(validation({
 //   email: "abc@d.e",
-//   password: "1234567890"
+//   password: "12345678901"
 // }))
