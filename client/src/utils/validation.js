@@ -1,5 +1,5 @@
-export const regexEmail = /\S+@\S+\.\S+/;
-export const regexPassword = new RegExp("[0-9]");
+import { regexEmail, regexPassword } from "./constants";
+
 
 export default function validation(input) {
   //* let input = {email: "abc@d.e", password: "1234567890" }
@@ -22,5 +22,5 @@ export default function validation(input) {
 
 // console.log(validation({
 //   email: "abc@d.e",
-//   password: "12345678901"
+//   password: "1234567890"
 // }))

@@ -2,18 +2,19 @@ import Card from "../card/Card.jsx";
 
 
 export default function Cards({ characters, onClose }) {
-   // console.log(characters);
-   //* props = { characters: [ --- ] }
-   //* characters = [ {R}, {M}, {B}, {S} ]
+
+   const cardsContainer = {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "space-evenly"
+   }
+
    return (
-      <div
-         style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-evenly"
-         }}
-      >
+      <div style={cardsContainer}>
          {
+            !characters.length
+               ? <h2>Por favor ingrese un id...</h2>
+               :
             characters.map(character => (
                <Card
                   key={character.id}
