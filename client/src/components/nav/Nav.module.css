@@ -1,0 +1,59 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+h2{
+    color: lightgreen;
+}
+
+header{
+    display: flex;
+    min-height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    &:hover{
+        filter: brightness(1.2);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+      }
+}
+
+.logo img{
+    height: 50px;
+    }
+
+
+nav .navLink{
+    font-weight: 200;
+    padding-right: 3px;
+    text-decoration: none;
+    color: lightgreen;
+    &:hover {
+        filter: brightness(1.2);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+      }
+}
+
+.searchBar button{
+    &:hover {
+        box-shadow: 0 10px 10px white;
+      }
+}
+
+
+
+@media (max-wigth: 600px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+
+
+}

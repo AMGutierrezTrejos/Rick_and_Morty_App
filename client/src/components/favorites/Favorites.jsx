@@ -20,8 +20,8 @@ export default function Favorites({ onClose }) {
       <div>
          <div>
             <select name="order" onChange={handleOrder}>
-               <option value="A">Ascendente</option>
-               <option value="D">Descendente</option>
+               <option value="A">Low - High</option>
+               <option value="D">High - Low</option>
             </select>
             <select name="filter" onChange={handleFilter}>
                <option value="All">All</option>
@@ -41,7 +41,7 @@ export default function Favorites({ onClose }) {
          >
             {
                !myFavorites.length
-               ? <h2>No hay favoritos</h2>
+               ? <h2>no favorites have been added</h2>
                :
                myFavorites.map(myFavorite => (
                   <Card

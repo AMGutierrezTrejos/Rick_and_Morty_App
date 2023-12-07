@@ -4,13 +4,15 @@ import { useEffect, useState } from 'react';
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { removeFav } from './redux/actions.js';
-import About from './components/about/About.jsx';
+import About from './components/About/About.jsx';
 import Cards from './components/cards/Cards.jsx';
 import Detail from './components/detail/Detail.jsx';
 import Favorites from './components/favorites/Favorites.jsx';
 import Form from './components/form/Form.jsx';
 import Nav from './components/nav/Nav.jsx';
 import NotFound from './components/notfound/NotFound.jsx';
+
+
 
 const URL = "https://rickandmortyapi.com/api/character";
 
@@ -79,7 +81,7 @@ function App() {
 
   useEffect(() => {
      //* Logueo automático
-     // !access && navigate('/home');
+     // !access && navigate('/home'); la / sola es para que toque hacer login y la /home para que directo se vaya al home
      !access && navigate('/');
   }, [access]);
 

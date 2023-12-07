@@ -13,7 +13,7 @@ export default function Cards({ characters, onClose }) {
       <div style={cardsContainer}>
          {
             !characters.length
-               ? <h2>Por favor ingrese un id...</h2>
+               ? <h2>Space for characters EMPTY, insert one</h2>
                :
             characters.map(character => (
                <Card

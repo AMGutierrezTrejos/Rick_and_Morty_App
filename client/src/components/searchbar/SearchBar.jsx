@@ -1,26 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-//* Etiquetas personalizadas con Styled Components
-const Container = styled.div`
-   padding-top: 20px;
-   padding-bottom: 15px;
-   margin: auto;
-`
-
-const Input = styled.input`
-   border-radius: 5px;
-   height: 40px;
-`
-
-const MyButton = styled.button`
-   background-color: darkslategrey;
-   color: wheat;
-   &:hover {
-      color: darkslategrey;
-      background-color: darkolivegreen;
-   }
-`
 
 export default function SearchBar(props) {
 
@@ -44,18 +24,21 @@ export default function SearchBar(props) {
 
    
    return (
-      <Container>
-         <Input
+      <nav>
+
+         <input
             type="text"
             name="search"
             id="search"
             onChange={handleChange}
             value={id}
+            
          />
-         <MyButton onClick={handleClick}>Agregar➕</MyButton>
+
+         <button onClick={handleClick}>Add</button>
          {/* Traer Character Random */}
-         <MyButton onClick={handleRandom}>Random🎲</MyButton>
-         <hr />
-      </Container>
+         <button onClick={handleRandom}>Random🎲</button>
+
+      </nav>
    );
 }
