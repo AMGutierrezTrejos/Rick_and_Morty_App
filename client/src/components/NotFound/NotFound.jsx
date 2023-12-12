@@ -4,6 +4,7 @@ export default function NotFound(props) {
 
   return (
      <div>
+         <h1>Page Not Found</h1>
          <img src={error404} alt="Not Found" />
      </div>
   );

@@ -1,0 +1,67 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .container_form{
+    /* margin: 50px; */
+    padding: 50px;
+    min-width: 400px;
+    
+    border-radius: 90px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 3px solid darkblue;
+  }
+
+  .input{
+    /* margin: 10px; */
+    padding: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid darkblue;
+    color: white  ;
+    /* font-weight: bold; */
+    font-size: 30px;
+    margin-bottom: 30px;
+   width: 100%;
+   font-family: 'Get Schwifty';
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 16px;
+    /* margin-left: 10px; */
+    font-weight: bold;
+    border: 2px solid darkblue;
+    background-color: lightblue;
+    color: black;
+    border-radius: 15px;
+    font-family: 'Get Schwifty';
+  }
+  
+  .input::placeholder {
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+  }
+
+  .button:hover{
+    cursor:pointer;
+    transform: scale(1.2);
+  transition: transform 0.5s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    background-color: none;
+  }
+  .gif {
+    margin-top: 20px; /* Puedes ajustar este margen según tus necesidades */
+    width: 300px;
+  }

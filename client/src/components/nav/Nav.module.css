@@ -1,59 +1,86 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
+* {
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
-}
-h2{
-    color: lightgreen;
-}
-
-header{
+  }
+  
+  body {
+    padding-top: 70px;
+  }
+  
+  .container {
+    padding: 10px;
     display: flex;
-    min-height: 40px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-}
+    justify-content: space-between; /* Alinea horizontalmente en el centro */
+    align-items: center; /* Alinea verticalmente en el centro */
+    height: 40px;
+    margin-top: 10px;
+    
+  }
+  
+  .container {
+    position: fixed;
+    z-index: 10;
+    background: transparent;
+    backdrop-filter: blur(155px);
+    /* margin-top: -70px; */
+    padding-right: 30px;
+    height: 60px;
+    width: 100vw;
+    top: -10px;
+  }
 
-.logo{
+  .container__home img{
+    &:hover {
+      cursor: url('/public/cursor2.cur'), auto;
+    }
+  }
+  
+  .container__button {
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-family: 'Get Schwifty';
+  }
+  
+  .container__button {
+    padding: 4px 25px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+    border: 2px solid darkblue;
+    background-color: rgba(93, 193, 185, 0.7);
+    color: white;
+    border-radius: 15px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+  }
+  
+  .container__button:hover {
+    cursor: pointer;
+    background-color: green;
+    cursor: url('/public/cursor2.cur'), auto;
+  }
+  .container__icons_logout {
+    font-size: 20px;
+    margin: 15px;
     display: flex;
-    align-items: center;
-    &:hover{
-        filter: brightness(1.2);
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
-      }
-}
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    cursor: url('/public/cursor3.cur'), auto;
+  }
 
-.logo img{
-    height: 50px;
-    }
-
-
-nav .navLink{
-    font-weight: 200;
-    padding-right: 3px;
-    text-decoration: none;
-    color: lightgreen;
-    &:hover {
-        filter: brightness(1.2);
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
-      }
-}
-
-.searchBar button{
-    &:hover {
-        box-shadow: 0 10px 10px white;
-      }
-}
-
-
-
-@media (max-wigth: 600px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-    }
-
-
-}
+  #container__button_logout:hover{
+    background-color: red;
+    border-color: red;
+    cursor: url('/public/cursor3.cur'), auto;
+  }
+  
+  .searchbar {
+    padding: 10px;
+  }
+  
+  .container img{
+    width: 50px;
+  }

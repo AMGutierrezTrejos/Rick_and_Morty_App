@@ -1,31 +1,89 @@
-.container {
-  background-color: grey;
-  /* width: 250px;
-  height: 500px; */
-  margin: 20px;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 10px black;
-  color: darkslategrey;
-  &:hover {
-    box-shadow: 0 10px 10px white;
-  }
-}
-
-.container img {
-  width: 130px;
-  box-shadow: 0 10px 10px black;
-  border-radius: 5px;
-}
-
-.container button {
-  background-color: darkslategrey;
-  margin: 10px;
-  &:hover {
-    background-color: darkcyan;
-  }
-}
-
-.container h2 {
+body {
   color: white;
+}
+
+.container__div {
+  border: 2px solid darkblue;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px;
+  width: 220px;
+  height: 400px;
+  text-align: center;
+  position: relative;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  &:hover {
+    filter: brightness(1.5);
+    box-shadow: 0 0 70px rgba(0, 255, 0, 0.9);
+  }
+}
+
+
+.container__div:not(:hover) {
+  transition: transform 0.3s ease;
+}
+
+.container__div_buttonx {
+  background-color: dimgray;
+  color: white;
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.container__div_button_cor {
+  background-color: dimgray;
+  color: white;
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.container__div_buttonx:hover {
+  background-color: greenyellow;
+}
+
+.container__div_button_cor:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.container__div_text img {
+  border: 2px solid darkblue;
+  border-radius: 50px;
+}
+
+.container__div_img {
+  margin-top: 20px;
+  width: 180px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container__div_text {
+  text-align: center;
+}
+
+.container__div_text:hover {
+  cursor: default;
+}
+
+.container__div_text h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.container__div_text h4 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 7px;
 }

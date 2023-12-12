@@ -1,4 +1,176 @@
-*{
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 100px; */
+  box-sizing: border-box;
+  gap: 100px;
+}
+.container__text {
+  width: 25vw;
+  height: 75vh;
+  background: transparent;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  border-radius: 100px;
+  border: 3px solid greenyellow;
+  &:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+  }
+}
+.container__text h1{
+  color: skyblue;
+  font-size: 50px;
+}
+.container__text h2{
+  color: white;
+}
+
+.container__text:hover {
+  cursor: default;
+}
+.container__img_img {
+  width: 400px;
+  border-radius: 200px;
+  border: 4px solid greenyellow;
+  &:hover {
+      filter: brightness(1.2);
+      box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+    }
+  }
+
+
+.container__education h3 {
+  font-size: 40px;
+  margin: 20px;
+  color: greenyellow;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+
+.container__text h3 {
+  font-size: 25px;
+  margin: 10px;
+  /* color:  rgba(93, 193, 185, 1); */
+  /* color: greenyellow; */
+  color: skyblue;
+}
+.container__text h4 {
+  font-size: 20px;
+  margin: 10px;
+  /* color:  rgba(93, 193, 185, 1); */
+  /* color: greenyellow; */
+  color: white;
+}
+
+/* apertura iconos follow me*/
+.containerforicon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.containerforicon__icon {
+  font-size: 35px;
+}
+.containerforicon__icon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+ 
+}
+.containerforicon__icon:not(:hover) {
+  transition: transform 0.5s ease;
+}
+.container__icon:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.container__icon:not(:hover) {
+  transition: transform 0.5s ease;
+}
+/*---------------------------------*/
+/* Boton de vuelta al home con estilos*/
+#comeback {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  top: 20px;
+  right:30px;
+}
+.container__icon {
+  font-size: 50px;
+  color: blue;
+  margin: 15px;
+}
+/*---------------------------------*/
+/*apertura iconos de skills */
+.container__icons {
+  font-size: 30px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.container__icons_hmtl {
+  color: orangered;
+}
+.container__icons_css {
+  color: #2194f0;
+}
+.container__icons_javascript {
+  color: #e8d44d;
+}
+.container__icons_react {
+  color: #5ed3f3;
+}
+.container__icons_redux {
+  color: #7248b6;
+}
+.container__icons_node {
+  color: #509941;
+}
+.container__icons_SiPostgresql {
+  color: black;
+}
+/*---------------------------------*/
+/* iconos de contacto*/
+.containerforicon__icon_linkdin{
+  color: #0270AD ;
+}
+.containerforicon__icon_github{
+color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     padding: 0;
     margin: 0;
     font-family:'Times New Roman', Times, serif;
@@ -78,4 +250,4 @@
       filter: brightness(1.2);
       box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
       }
-  }
+  } */

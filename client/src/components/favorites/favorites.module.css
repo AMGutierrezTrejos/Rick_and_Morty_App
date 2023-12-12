@@ -1,0 +1,55 @@
+.container__button {
+  padding: 5px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.container__button {
+  padding: 4px 25px;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: bold;
+  border: 2px solid greenyellow;
+  background-color: rgba(93, 193, 185, 0.7);
+  color: white;
+  border-radius: 15px;
+  background: transparent;
+  backdrop-filter: blur(15px);
+}
+
+.container__button_option {
+  background-color: #341c5a;
+  color: white;
+}
+
+.container__button_option:hover {
+  cursor: pointer;
+}
+
+.container__button:hover {
+  cursor: pointer;
+}
+.container__icon {
+  font-size: 50px;
+  color: blue;
+  margin: 15px;
+}
+
+.container__icon:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.container__icon:not(:hover) {
+  transition: transform 0.5s ease;
+}
+
+#comeback {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  top: 20px;
+  right:30px;
+}
+
